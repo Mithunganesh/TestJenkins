@@ -2,12 +2,10 @@ package com.walmart.chile.ims.service.handler;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.List;
 
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 
 import com.walmart.chile.ims.common.utility.CommonContants;
 //import com.walmart.chile.ims.model.B2BInventoryQtyResponse;
@@ -16,11 +14,7 @@ import com.walmart.chile.ims.common.utility.CommonContants;
 import com.walmart.chile.ims.model.Inventory;
 import com.walmart.chile.ims.model.InventoryQtyResponse;
 import com.walmart.chile.ims.model.ItemInventoryResponse;
-import com.walmart.chile.ims.model.ProductInventoryResponse;
 import com.walmart.chile.ims.model.StoreItemResponse;
-import com.walmart.chile.ims.model.StoreProductResponse;
-import com.walmart.chile.ims.model.StoreUpcResponse;
-import com.walmart.chile.ims.model.UpcInventoryResponse;
 import com.walmart.chile.ims.service.dao.InventoryDAO;
 import com.walmart.chile.ims.service.dao.InventoryDAOImpl;
 

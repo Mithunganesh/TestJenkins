@@ -1,8 +1,8 @@
 package com.walmart.chile.ims.common.exception;
 
 public class IMSResponse {
-    private String status;
-    private String errorCode;
+	private String errorCode;
+	private String status;
     private String message;
 	public String getStatus() {
 		return status;
@@ -23,7 +23,4 @@ public class IMSResponse {
 		this.message = message;
 	}
 	
-	
-
-
 }

@@ -4,8 +4,6 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import javax.ws.rs.core.Response;
-
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
@@ -17,7 +15,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.walmart.chile.ims.common.exception.IMSException;
-import com.walmart.chile.ims.common.exception.IMSResponse;
 import com.walmart.chile.ims.common.utility.CommonContants;
 import com.walmart.chile.ims.model.Inventory;
 import com.walmart.chile.ims.model.StoreItemResponse;

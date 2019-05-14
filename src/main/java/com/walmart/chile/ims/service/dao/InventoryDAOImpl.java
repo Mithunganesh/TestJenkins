@@ -1,31 +1,23 @@
 package com.walmart.chile.ims.service.dao;
 
-import java.math.RoundingMode;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
-
 import java.util.Arrays;
-import java.util.Collection;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
+import org.apache.log4j.Logger;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jca.support.LocalConnectionFactoryBean;
 import org.springframework.stereotype.Repository;
-import org.apache.log4j.Logger;
+
 import com.walmart.chile.ims.common.exception.IMSException;
 import com.walmart.chile.ims.common.utility.CommonContants;
 import com.walmart.chile.ims.model.Inventory;
 import com.walmart.chile.ims.model.InventoryPK;
 import com.walmart.chile.ims.model.InventoryTypes;
-import com.walmart.chile.ims.model.ItemCache;
-import com.walmart.chile.ims.model.ProductItemCache;
 import com.walmart.chile.ims.model.StoresCache;
-import com.walmart.chile.ims.model.UpcItemCache;
 //import com.walmart.chile.ims.service.HibernateUtil;
 @Repository
 public class InventoryDAOImpl implements InventoryDAO {

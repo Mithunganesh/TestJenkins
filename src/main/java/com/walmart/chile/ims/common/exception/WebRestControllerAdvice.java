@@ -11,6 +11,7 @@ public class WebRestControllerAdvice {
 	  IMSResponse responseMsg = new IMSResponse();
 	  responseMsg.setErrorCode(ex.getErrorCode()+"");
 	  responseMsg.setMessage(ex.getErrorMessage());
+	  responseMsg.setStatus(ex.getErrorCode()+"");
 	  return responseMsg;
   }
 }
