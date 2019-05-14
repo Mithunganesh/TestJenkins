@@ -1,8 +1,5 @@
 package com.walmart.chile.ims.common.utility;
 
-import org.springframework.stereotype.Component;
-
-@Component
 public class CommonContants {
 	
 	private CommonContants() {

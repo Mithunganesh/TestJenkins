@@ -78,5 +78,6 @@ public class HibernateConfiguration {
 		txManager.setSessionFactory(sessionFactory().getObject());
 		return txManager;
 	}
+	
 
 }

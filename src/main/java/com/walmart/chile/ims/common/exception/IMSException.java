@@ -1,7 +1,14 @@
 package com.walmart.chile.ims.common.exception;
 
+import java.io.Serializable;
 
-public class IMSException extends Exception {
+
+public class IMSException extends Exception implements Serializable  {
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private final int errorCode;
 	private final String errorMessage;
 	private String param;
@@ -43,4 +50,5 @@ public class IMSException extends Exception {
 	/*public void setErrorMessage(String errorMessage) {
 		this.errorMessage = errorMessage;
 	} */
+	
 }
