@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import com.walmart.chile.ims.common.utility.CommonContants;
@@ -20,6 +21,8 @@ import com.walmart.chile.ims.service.dao.InventoryDAOImpl;
 
 @Component
 public class GetInventoryResponseMapper {
+	@Autowired
+	private InventoryDAO inventoryDAO;
 	
 	private static Logger log= Logger.getLogger(InventoryDAOImpl.class.getName());
 	
@@ -41,7 +44,7 @@ public class GetInventoryResponseMapper {
 		if(inventoryRequest.getStoreIds() != null && !inventoryRequest.getStoreIds().isEmpty()){
 			storeList = inventoryRequest.getStoreIds() ;
 		}else{
-			InventoryDAO inventoryDAO = new InventoryDAOImpl();
+//			InventoryDAO inventoryDAO = new InventoryDAOImpl();
 			storeList = inventoryDAO.getAllStores();
 		}
 		for(String store : storeList){
