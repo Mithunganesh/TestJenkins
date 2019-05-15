@@ -14,6 +14,11 @@ pipeline{
                             //   }
                    }
             }
+        stage('Archiving War'){
+            steps{
+                archiveArtifacts artifacts: 'target/*.war', onlyIfSuccessful: true
+                }
+            }
         }
 }
     
