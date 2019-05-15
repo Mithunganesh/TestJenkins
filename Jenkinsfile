@@ -22,6 +22,7 @@ pipeline{
         stage('Copy war to Docker Container'){
             steps{
                  echo "$WORKSPACE"
+                 bat "docker cp $WORKSPACE/target/GetInventory.war getInventoryService:/usr/local/tomcat/GetInventory.war"
                 }
             }
         }
