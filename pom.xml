@@ -12,7 +12,7 @@
 	<groupId>com.nutech</groupId>
 	<artifactId>GetInventoryService</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 	<name>GetInventoryService</name>
 	<description>IMS Get Inventory Service</description>
 
@@ -118,6 +118,7 @@
 	</dependencies>
 
 	<build>
+	<finalName>GetInventory</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
