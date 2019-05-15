@@ -19,6 +19,11 @@ pipeline{
                 archiveArtifacts artifacts: 'target/*.war', onlyIfSuccessful: true
                 }
             }
+        stage('Copy war to Docker Container'){
+            steps{
+                 echo "$WORKSPACE"
+                }
+            }
         }
 }
     
