@@ -50,7 +50,7 @@ public class GetInventoryResource {
 	@PostMapping(value = "/StockByItemIds", headers = "Accept=application/json")
 	public ResponseEntity<List<StoreItemResponse>> getStockByItemIds(@RequestBody Inventory inventoryRequest) throws IMSException {
 		log.info("Entered GetInventoryResource :: getStockByItemIds :: Request :: " + inventoryRequest);
-		List<Inventory> inventoryList = null;
+		List<Inventory> inventoryList = null;	
 		List<StoreItemResponse> responseList = null;
 		if (null == inventoryRequest) {
 			throw new IMSException(253, CommonContants.ERR_JSON_INPUT_MISSING);
