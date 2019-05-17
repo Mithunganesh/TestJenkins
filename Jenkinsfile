@@ -17,7 +17,7 @@ pipeline{
             steps{
                 echo "====++++Copying WAR to Container++++===="
                  echo "$WORKSPACE"
-                 bat "docker cp $WORKSPACE/target/*.war getInventoryService:/opt/temp/GetInventory.war"
+                 bat "docker cp $WORKSPACE/target/GetInventory.war getInventoryService:/opt/temp/GetInventory.war"
                 }
             }
         stage('Backup and Deploy WAR'){
