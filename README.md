@@ -1,2 +1,2 @@
-# GetInvenoryService
+# GetInventoryService
 StockByItemIds service to microservice
